@@ -1,5 +1,5 @@
 # Task_Manager_v2
-Include in self: 
+consists of: 
 
 - FastAPI
 - Register
