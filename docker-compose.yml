@@ -1,0 +1,17 @@
+services:
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: taskdb
+    ports:
+      - "5432:5432"
+
+  api:
+    build: .
+    ports:
+      - "8006:8006"
+    depends_on:
+      - db
